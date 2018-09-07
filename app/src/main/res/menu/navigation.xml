@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/contact_list"
+        android:title="لیست مخاطبین" />
+
+    <item
+        android:id="@+id/sort"
+        android:title="مرتب سازی" />
+
+    <item
+        android:id="@+id/filter"
+        android:title="فیلتر" />
+    <item
+        android:id="@+id/contact_us"
+        android:title="تماس با ما" />
+    <item
+        android:id="@+id/about_us"
+        android:title="درباره ما" />
+
+</menu>

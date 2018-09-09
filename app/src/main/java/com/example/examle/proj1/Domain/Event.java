@@ -8,7 +8,7 @@ public class Event {
     private int userID;
     private String title;
     private String description;
-    private int state;
+    private enum state {close, open}
     private Time reminderTime;
     private Date reminderDate;
     private Time reminderTimeRepeat;

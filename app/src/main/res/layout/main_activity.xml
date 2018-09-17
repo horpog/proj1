@@ -20,7 +20,7 @@
             android:layout_margin="32dp"
             android:layout_weight="1"
             android:clickable="true"
-            android:src="@android:drawable/ic_menu_add"
+            android:src="@drawable/canvas1"
             app:backgroundTint="@color/colorPrimary" />
 
         <android.support.design.widget.AppBarLayout

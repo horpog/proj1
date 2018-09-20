@@ -32,6 +32,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:layout_weight="1"
+                app:title="رویداد ها"
+                app:titleTextColor="@color/cardview_light_background"
                 android:background="@color/colorPrimary"
                 app:layout_scrollFlags="scroll|enterAlways" />
 
@@ -53,6 +55,5 @@
         android:layout_width="280dp"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        app:menu="@menu/navigation">
-    </android.support.design.widget.NavigationView>
+        app:menu="@menu/navigation"></android.support.design.widget.NavigationView>
 </android.support.v4.widget.DrawerLayout>

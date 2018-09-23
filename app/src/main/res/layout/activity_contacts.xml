@@ -32,14 +32,15 @@
             app:layout_scrollFlags="scroll|enterAlways"
             />
 
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/contacts_list"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:listitem="@layout/contacts_list_item">
-
-        </android.support.v7.widget.RecyclerView>
-
     </android.support.design.widget.AppBarLayout>
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contacts_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:listitem="@layout/contacts_list_item">
+
+    </android.support.v7.widget.RecyclerView>
 </android.support.design.widget.CoordinatorLayout>

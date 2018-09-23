@@ -8,6 +8,7 @@
     android:layout_marginRight="@dimen/standard_margin"
     android:layout_marginTop="2dp"
     android:layoutDirection="rtl"
+    app:cardBackgroundColor="@android:color/background_light"
     app:cardElevation="@dimen/standard_margin">
 
 
@@ -31,19 +32,21 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/event_description"
+                android:id="@+id/contact_first_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/standard_margin"
                 android:layout_weight="1"
+                android:textColor="@color/colorAccent"
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/reminder_date"
+                android:id="@+id/contact_last_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/standard_margin"
                 android:layout_weight="1"
+                android:textColor="@color/colorAccent"
                 android:text="TextView" />
 
 

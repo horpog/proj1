@@ -14,6 +14,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpRecyclerView() {
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.events_list);
-        EventListRecyclerAdapter recycleAdapter = new EventListRecyclerAdapter(getApplicationContext(), FakeData.getEvents());
-        recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext(),LinearLayoutManager.VERTICAL,false));
+        EventListRecyclerAdapter recycleAdapter = new EventListRecyclerAdapter(this, FakeData.getEvents());
+        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         recyclerView.setAdapter(recycleAdapter);
+
     }
     private void setupToolbar() {
         drawerLayout = (DrawerLayout)findViewById(R.id.drawer_layout);
